@@ -1,0 +1,17 @@
+spring:
+    profiles: dev
+server:
+    port: 9090
+cleiser:
+    id: cleiser
+    secret: secret-cleiser
+    
+---
+
+spring:
+    profiles: prod
+server:
+    port: ${PORT}
+cleiser:
+    id: ${CLEISER}
+    secret: ${SECRET}
